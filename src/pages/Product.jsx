@@ -47,6 +47,9 @@ export default function Product(){
 
     function decrementCount(){
         setCount(count - 1)
+        if (count <= 0){
+            setCount(0)
+        }
     }
 
     
