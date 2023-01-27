@@ -1,12 +1,12 @@
 const buttons = {
     SolidButton: function SolidButton({children}){
       return(
-          <button className='bg-orange-500 hover:bg-orange-600 text-white p-3 px-10 rounded-lg mr-2 justify-between'>{children}</button>
+          <button className='flex items-center bg-orange-500 hover:bg-orange-400 text-white shadow py-2 px-4 mt-3 rounded-lg justify-center w-full lg:w-1/2'>{children}</button>
       )
     },
     OutlineButton: function OutlineButton({children}){
       return(
-          <button className='bg-gray-200 hover:bg-orange-100 text-orange-500 p-3 px-20 rounded-lg mr-2 justify-between'>{children}</button>
+          <button className='flex items-center bg-gray-200 hover:bg-orange-100 text-orange-500 py-2 rounded-lg justify-evenly mr-3 w-full lg:w-1/2'>{children}</button>
       )
     }
   }

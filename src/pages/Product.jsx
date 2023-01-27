@@ -5,6 +5,8 @@ const { SolidButton, OutlineButton } = buttons;
 import Navbar from '../components/Navbar';
 import { imagesData } from '../imagesData';
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import minus from '/images/icon-minus.svg'
+import plus from '/images/icon-plus.svg'
 
 export default function Product(){
 
@@ -64,7 +66,7 @@ export default function Product(){
         <Navbar cartLength={cartLength} />
         <div className='grid lg:grid-cols-2 gap-10 py-15'>
                 
-                <article className='my-10'>
+                <article className='my-10 p-8'>
                     <Card image={mainImage} />
 
                     <ul className='flex gap-5 justify-start mt-5'>
@@ -78,17 +80,18 @@ export default function Product(){
                 {cartItems.map((item) => (
 
                 <div className='text-left lg:px-10 lg:pt-40 p-8'>
-                    <h1 className='font-bold uppercase text-orange-300'>SNEAKER COMPANY</h1>
-                    <h2 className='text-3xl font-bold leading-loose'>{item.name}</h2>
-                    <p className='text-gray-500 my-5'>{item.description}</p>
+                    <h2 className='font-bold uppercase text-orange-300 tracking-wide'>SNEAKER COMPANY</h2>
+                    <h1 className='text-3xl font-bold leading-loose'>{item.name}</h1>
+                    <p className='text-slate-500 my-5 leading-relaxed'>{item.description}</p>
 
                     <div className='flex lg:flex-col lg:justify-start justify-between'>
                         <p className='text-2xl font-bold'>${item.discount_price}<span className='ml-5 text-base text-orange-400 rounded-lg bg-orange-100 p-1 px-2'>{(item.original_price - item.discount_price) / item.original_price * 100}%</span></p>
-                        <p className='text-gray-500 line-through mx-2'>${item.original_price}</p>
+                        <p className='text-slate-500 line-through mx-2'>${item.original_price}</p>
                     </div>
 
-                    <div className='mt-5 flex-col mb-4'>
-                        <OutlineButton><span onClick={decrementCount} className='text-xl font-bold'>-</span> {count} <span onClick={incrementCount} className='text-xl font-bold'>+</span></OutlineButton>
+                    <div className='mt-5 flex flex-col lg:flex-row mb-4'>
+                        <OutlineButton> 
+                            <img src={minus} onClick={decrementCount} /> {count} <img src={plus} onClick={incrementCount} /> </OutlineButton>
 
                         <SolidButton onClick={() => addItem(item, count)} >
                         <AiOutlineShoppingCart style={{ display: 'inline',marginRight: 5}} />
