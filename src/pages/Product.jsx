@@ -66,7 +66,7 @@ export default function Product(){
 
     return(
         <>
-        <Navbar cartLength={cartLength} />
+        <Navbar count={count} cart={cartItems} />
         <div className='grid lg:grid-cols-2 gap-10 py-15'>
                 
                 <article className='lg:my-10'>
@@ -89,7 +89,7 @@ export default function Product(){
 
                     <div className='flex lg:flex-col lg:justify-start justify-between'>
                         <p className='text-2xl font-bold'>${item.discount_price}<span className='ml-5 text-base text-orange-400 rounded-lg bg-orange-100 p-1 px-2'>{(item.original_price - item.discount_price) / item.original_price * 100}%</span></p>
-                        <p className='text-slate-500 line-through mx-2'>${item.original_price}</p>
+                        <p className='text-slate-500 line-through'>${item.original_price}</p>
                     </div>
 
                     <div className='mt-5 flex flex-col lg:flex-row mb-4'>
