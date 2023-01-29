@@ -69,10 +69,9 @@ export default function Product(){
         <Navbar cartLength={cartLength} />
         <div className='grid lg:grid-cols-2 gap-10 py-15'>
                 
-                <article className='my-10 p-8'>
-                    <Card image={mainImage} />
-
-                    <ul className='flex gap-5 justify-start mt-5'>
+                <article className='lg:my-10'>
+                    <Card image={mainImage} products={images} />
+                    <ul className='hidden lg:flex gap-5 justify-start mt-5'>
                     {images.map((image, index) => (
                         <li key={image.id} onClick={() => setValue(index)} className={index === value && 'border-2 opacity-80 border-orange-500 rounded-xl cursor-pointer'}>
                             <img src={image.thumbnail} className="w-20 rounded-lg" /> 
@@ -80,11 +79,12 @@ export default function Product(){
                         ))}
                     </ul>
                 </article>
+
                 {cartItems.map((item) => (
 
                 <div className='text-left lg:px-10 lg:pt-40 p-8'>
                     <h2 className='font-bold uppercase text-orange-300 tracking-wide'>SNEAKER COMPANY</h2>
-                    <h1 className='text-3xl font-bold leading-loose'>{item.name}</h1>
+                    <h1 className='text-3xl font-bold lg:leading-loose'>{item.name}</h1>
                     <p className='text-slate-500 my-5 leading-relaxed'>{item.description}</p>
 
                     <div className='flex lg:flex-col lg:justify-start justify-between'>

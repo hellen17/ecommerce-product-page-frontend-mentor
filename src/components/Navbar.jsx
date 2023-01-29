@@ -1,6 +1,5 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { UserOutlined } from '@ant-design/icons';
-import { Avatar, Badge, Popover } from 'antd';
+import { Badge, Popover } from 'antd';
 import { AiFillDelete } from "react-icons/ai";
 import logo from '/images/logo.svg'
 import avatar from '/images/image-avatar.png'
@@ -19,7 +18,7 @@ export default function Navbar({count}) {
     <header className="flex justify-between items-center py-3 border-b-2">
     <div className="flex items-center justify-start gap-4">
       <img src={logo} alt="logo" />
-      <nav className="flex items-center justify-start gap-4">
+      <nav className="flex hidden items-center justify-start gap-4">
         <a href="/">Collections</a>
         <a href="#">Men</a>
         <a href="#">Women</a>
