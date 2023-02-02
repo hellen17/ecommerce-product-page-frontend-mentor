@@ -47,8 +47,8 @@ export default function Navbar({count, cart}) {
       </nav>
     </div>
 
-      <div className="flex items-center">
-        <Popover placement="bottom" title={text} content={content} trigger="click">
+      <div className="flex items-center gap-5">
+        <Popover placement="bottom" title={text} content={content} trigger="click" >
           <Badge count={count} showZero>
           <AiOutlineShoppingCart size={25} className="mx-2"/>
           </Badge>
