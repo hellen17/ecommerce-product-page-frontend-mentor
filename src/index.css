@@ -34,6 +34,14 @@ body{
     
 }
 
+@media screen and (min-width: 1024px) {
+    .image{
+        width: 75%;
+    }
+    
+}
+    
+
 .close{
     position: absolute;
     z-index: 999;
