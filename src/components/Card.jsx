@@ -40,7 +40,7 @@ export default function Card({image, products}){
 
     return(
       <div className='relative'>
-       <img className='lg:rounded-lg' src={ isDesktop ? image : mainImage } alt="product images" width={450} />
+       <img className='lg:rounded-lg' src={ isDesktop ? image : mainImage } alt="product images" width={'70%'} />
         
       <ul className='lg:hidden'>
       <li onClick={previousSlide} className='absolute rounded-full bg-slate-100 p-3 left-4 top-1/2'> <FaChevronLeft/> </li>

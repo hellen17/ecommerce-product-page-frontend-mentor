@@ -56,6 +56,7 @@ export default function Product(){
     function removeItem(item){
         setCartItems(cartItems.filter((item) => item.id !== id))
     }
+    
     function addItem(item, count){
         setCartItems([...cartItems, item])
         setUpdateCount(updateCount + count)
