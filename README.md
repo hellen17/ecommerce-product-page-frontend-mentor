@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://user-images.githubusercontent.com/42536943/216782814-38f7f611-bae0-41d4-acaa-c8224b776e3c.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
