@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Card from '../components/Card';
+//import buttons
 import buttons from '../components/Button';
 const { SolidButton, OutlineButton } = buttons;
+
 import Navbar from '../components/Navbar';
 import { imagesData } from '../imagesData';
 import { AiOutlineShoppingCart } from "react-icons/ai";
