@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/ecommerce-product-page-sICex9V4dl)
-- Live Site URL: [Add live site URL here](https://frontend-ecommerce-product-page.netlify.app/)
+- [ Solution URL ](https://www.frontendmentor.io/solutions/ecommerce-product-page-sICex9V4dl)
+- [Live Site URL ](https://frontend-ecommerce-product-page.netlify.app/)
 
 ## My process
 
