@@ -88,8 +88,6 @@ const buttons = {
   export default buttons;
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 
 ### Continued development
 - Implement Add to Cart and Delete from Cart functionality
